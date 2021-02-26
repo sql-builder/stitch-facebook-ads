@@ -1,6 +1,6 @@
 # Facebook-ads
 
-BETA package for transforming Facebook datasets managed by Segment, Stitch or Fivetran.
+BETA package for transforming Facebook datasets managed by Stitch.
 
 
 ## Configure the package
@@ -19,10 +19,6 @@ facebook({
     facebookSchema: "facebook_ads",
     // Optional prefix metadata if applicable
     stagingTablePrefix: "stg_",
-    // Only define one of the below sources of how you are loading the data
-    usingFivetran: false,
-    usingStitch: true,
-    usingSegment: true,
     // Define the destination schema and table/view
     defaultConfig: {  
         database: "database_name",
@@ -35,7 +31,6 @@ facebook({
 ```
 
 ## Supported warehouses:
-[TBD]
- - BigQuery
- - Snowflake
- - Redshift
+ - BigQuery [Tested]
+ - Snowflake [Untested]
+ - Redshift [Untested]
