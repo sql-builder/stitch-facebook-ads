@@ -1,4 +1,6 @@
-const common = require("./common");
+const crossDB = require("./crossDB");
+const sql = require("@dataform/sql")();
+
 const tableName = `campaigns`
 
 module.exports = (params) => {
@@ -7,8 +9,7 @@ module.exports = (params) => {
         ...params.defaultConfig
     }).query(ctx => `
 with source as (
-${common.filterStitchRelation(ctx, params, tableName, `id`)}
-)
+${crossDB.filterStitch(ctx, params, tableName, `id`)} )
 SELECT
     cast(id as string) as ad_campaign_id,
     cast(account_id as string) as ad_account_id,

@@ -1,6 +1,6 @@
 const facebook = require("../");
 
-const models = facebook({
+const facebookModels = facebook({
     //
     // Define the database and schema of your facebook data
     facebookDatabase: "raw",
