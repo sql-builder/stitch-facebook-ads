@@ -15,23 +15,23 @@ module.exports = (params) => {
         ...params
     };
 
-    let facebookAds, facebookAdsets, facebookCampaigns, facebookAdPerformance;
+    let stitchFacebookAds, stitchFacebookAdsets, stitchFacebookCampaigns, stitchFacebookAdPerformance;
 
-    facebookAds = declare({
+    stitchFacebookAds = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
         name: "ads"
     });
 
-    facebookAdsets = declare({
+    stitchFacebookAdsets = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
         name: "adsets"
     });
 
-    facebookCampaigns = declare({
+    stitchFacebookCampaigns = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
@@ -47,10 +47,10 @@ module.exports = (params) => {
 
     // Publish and return datasets.
     let result = {
-        facebookAds: facebookAds(params),
-        facebookAdsets: facebookAdsets(params),
-        facebookCampaigns: facebookCampaigns(params),
-        facebookAdPerformance: facebookAdPerformance(params)
+        stitchFacebookAds: facebookAds(params),
+        stitchFacebookAdsets: facebookAdsets(params),
+        stitchFacebookCampaigns: facebookCampaigns(params),
+        stitchFacebookAdPerformance: facebookAdPerformance(params)
     };
 
     return result;
