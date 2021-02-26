@@ -7,8 +7,8 @@ module.exports = (params) => {
 
     params = {
         // set defaults for parameters
-        facebookDatabase: "raw",
-        facebookSchema: "facebook_ads",
+        facebookDatabase: "",
+        facebookSchema: "",
         tablePrefix: "",
         stagingTablePrefix: "",
         stagingSchema: "",
