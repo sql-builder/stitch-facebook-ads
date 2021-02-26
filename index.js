@@ -15,30 +15,30 @@ module.exports = (params) => {
         ...params
     };
 
-    let ads, adsets, campaigns, adPerformance;
+    let facebookAds, facebookAdsets, facebookCampaigns, facebookAdPerformance;
 
-    ads = declare({
+    facebookAds = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
         name: "ads"
     });
 
-    adsets = declare({
+    facebookAdsets = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
         name: "adsets"
     });
 
-    campaigns = declare({
+    facebookCampaigns = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
         name: "campaigns"
     });
 
-    adPerformance = declare({
+    facebookAdPerformance = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
@@ -47,10 +47,10 @@ module.exports = (params) => {
 
     // Publish and return datasets.
     let result = {
-        ads: facebookAds(params),
-        adsets: facebookAdsets(params),
-        campaigns: facebookCampaigns(params),
-        adPerformance: facebookAdPerformance(params)
+        facebookAds: facebookAds(params),
+        facebookAdsets: facebookAdsets(params),
+        facebookCampaigns: facebookCampaigns(params),
+        facebookAdPerformance: facebookAdPerformance(params)
     };
 
     return result;
