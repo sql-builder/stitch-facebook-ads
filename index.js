@@ -12,9 +12,6 @@ module.exports = (params) => {
         tablePrefix: "",
         stagingTablePrefix: "",
         stagingSchema: "",
-        usingFivetran: false,
-        usingStitch: false,
-        usingSegment: true,
         ...params
     };
 
