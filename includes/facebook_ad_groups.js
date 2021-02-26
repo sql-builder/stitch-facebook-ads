@@ -1,4 +1,4 @@
-const common = require("./includes/common");
+const common = require("./common");
 const tableName = `adsets`
 
 module.exports = (params) => {
