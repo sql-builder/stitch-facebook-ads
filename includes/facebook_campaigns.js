@@ -1,3 +1,4 @@
+const common = require("./includes/common");
 const tableName = `campaigns`
 
 module.exports = (params) => {
