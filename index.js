@@ -1,7 +1,7 @@
-const facebookAds = require("./includes/facebook_ads");
-const facebookAdsets = require("./includes/facebook_ad_groups");
-const facebookCampaigns = require("./includes/facebook_campaigns");
-const facebookAdPerformance = require("./includes/facebook_ad_performance");
+const facebookAds = require("./includes/stitch_facebook_ads");
+const facebookAdsets = require("./includes/stitch_facebook_ad_groups");
+const facebookCampaigns = require("./includes/stitch_facebook_campaigns");
+const facebookAdPerformance = require("./includes/stitch_facebook_ad_performance");
 
 module.exports = (params) => {
 
