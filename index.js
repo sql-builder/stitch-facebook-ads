@@ -38,7 +38,7 @@ module.exports = (params) => {
         name: "campaigns"
     });
 
-    facebookAdPerformance = declare({
+    stitchFacebookAdPerformance = declare({
         ...params.defaultConfig,
         database: params.facebookDatabase,
         schema: params.facebookSchema,
