@@ -18,7 +18,7 @@ SELECT
     name as ad_group_name,
     targeting as ad_group_targeting,
     effective_status as ad_group_status,
-    created_time as ad_group_start_ts,
+    created_time as ad_group_create_ts,
     date(start_time) as ad_group_start_date,
     cast(null as date) as ad_group_end_date,
     daily_budget as ad_group_budget,
