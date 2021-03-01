@@ -9,7 +9,7 @@ module.exports = (params) => {
         ...params.defaultConfig
     }).query(ctx =>`
 with source as ( 
-${crossDB.filterStitch(ctx, params, tableName, `concat(ad_id,cast(date_start as string))`)}
+${crossDB.filterStitch(ctx, params, tableName, `ad_id`)}
 )    
 SELECT
     cast(ad_id as string) as ad_id,
