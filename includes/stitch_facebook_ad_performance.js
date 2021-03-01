@@ -20,7 +20,7 @@ SELECT
     ${crossDB.castInt(null, global.dataform.projectConfig.warehouse)} as ad_total_link_clicks,
     impressions as ad_total_impressions,
     reach as ad_total_reach,
-    unique_clicks as as_total_unique_clicks,
+    unique_clicks as ad_total_unique_clicks,
     ${crossDB.castInt(null, global.dataform.projectConfig.warehouse)} as ad_total_unique_impressions,
     ${crossDB.castInt(null, global.dataform.projectConfig.warehouse)} as ad_total_inline_post_engagements,
     spend as ad_total_cost,
