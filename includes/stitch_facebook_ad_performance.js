@@ -17,7 +17,7 @@ SELECT
     ${crossDB.safeDivide(`spend`, `clicks`)} as ad_avg_cost,
     frequency as ad_total_frequency,
     clicks as ad_total_clicks,
-    ${crossDB.castInt(inline_link_clicks, global.dataform.projectConfig.warehouse)} as ad_total_link_clicks,
+    ${crossDB.castInt(`inline_link_clicks`, global.dataform.projectConfig.warehouse)} as ad_total_link_clicks,
     impressions as ad_total_impressions,
     reach as ad_total_reach,
     unique_clicks as ad_total_unique_clicks,
