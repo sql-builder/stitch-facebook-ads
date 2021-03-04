@@ -33,7 +33,7 @@ SELECT
     'Facebook' as ad_network,
     _sdc_batched_at as row_loaded_on,
     current_timestamp() as updated_on,
-    'STITCH' as source_name
+    'Stitch' as source_name
 FROM source
 `)
 }
