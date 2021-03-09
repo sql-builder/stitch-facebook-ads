@@ -7,8 +7,8 @@ module.exports = (params) => {
 
     params = {
         // set defaults for parameters
-        facebookDatabase: "",
-        facebookSchema: "",
+        databaseName: "",
+        schemaName: "",
         tablePrefix: "",
         stagingTablePrefix: "",
         stagingSchema: "",
@@ -19,29 +19,29 @@ module.exports = (params) => {
 
     stitchFacebookAds = declare({
         ...params.defaultConfig,
-        database: params.facebookDatabase,
-        schema: params.facebookSchema,
+        database: params.databaseName,
+        schema: params.schemaName,
         name: "ads"
     });
 
     stitchFacebookAdsets = declare({
         ...params.defaultConfig,
-        database: params.facebookDatabase,
-        schema: params.facebookSchema,
+        database: params.databaseName,
+        schema: params.schemaName,
         name: "adsets"
     });
 
     stitchFacebookCampaigns = declare({
         ...params.defaultConfig,
-        database: params.facebookDatabase,
-        schema: params.facebookSchema,
+        database: params.databaseName,
+        schema: params.schemaName,
         name: "campaigns"
     });
 
     stitchFacebookAdPerformance = declare({
         ...params.defaultConfig,
-        database: params.facebookDatabase,
-        schema: params.facebookSchema,
+        database: params.databaseName,
+        schema: params.schemaName,
         name: "ads_insights"
     });
 
