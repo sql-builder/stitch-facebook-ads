@@ -1,0 +1,6 @@
+{
+    "warehouse": "bigquery",
+    "defaultSchema": "google_ads",
+    "defaultDatabase": "raw",
+    "assertionSchema": "dataform_assertions"
+}
