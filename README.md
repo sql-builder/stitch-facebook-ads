@@ -15,8 +15,8 @@ const facebook = require("facebook-ads");
 facebook({
     //
     // Define the database and schema of your facebook data
-    facebookDatabase: "raw",
-    facebookSchema: "facebook_ads",
+    databaseName: "raw",
+    schemaName: "facebook_ads",
     // Optional prefix metadata if applicable
     stagingTablePrefix: "stg_",
     // Define the destination schema and table/view
