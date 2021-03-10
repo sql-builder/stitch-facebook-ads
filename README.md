@@ -10,7 +10,7 @@ Create a new JS file in your `definitions/` folder and create the Facebook-ads t
 By default, the package will look for source data in the `facebook_ads` schema in the `raw` database. Please set the source database and schema as required.
 
 ```js
-const facebook = require("facebook-ads");
+const facebook = require("stitch-facebook-ads-source");
 
 facebook({
     //
@@ -28,6 +28,16 @@ facebook({
     },
 });
 
+```
+
+And in your package.json file add a line for FB ads source:
+```json
+{
+    "dependencies": {
+        "@dataform/core": "x.xx.x",
+        "stitch-facebook-ads-source": "git+https://github.com/sql-builder/stitch-facebook-ads-source.git"
+    }
+}
 ```
 
 ## Supported warehouses:
